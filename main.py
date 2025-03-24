@@ -1,19 +1,13 @@
 import pygame
 import random
+from constants import *
+
 
 
 # Initialize pygame
 pygame.init()
 
-# Constants
-WIDTH, HEIGHT = 600, 600  # The dimensions of the game window
-GRID_SIZE = 30  # Each cell in the grid is 30x30 pixels
-ROWS, COLS = HEIGHT // GRID_SIZE, WIDTH // GRID_SIZE  # Number of rows and columns in the grid
-WHITE = (255, 255, 255)  # Color for empty paths and pellets
-BLACK = (0, 0, 0)  # Background color
-YELLOW = (255, 255, 0)  # Color for Pac-Manr
-RED = (255, 0, 0)  # Color for ghosts
-BLUE = (0, 0, 255)  # Color for walls
+
 
 # Maze grid (1 = Wall, 0 = Empty path, 2 = Pellet, 3 = Ghost, 4 = Pac-Man)
 maze = [
